@@ -13,7 +13,7 @@ module RelcyCards
 
       def get_card(id)
         relcy = Relcy::Client.new("3BC6F2208B90542717470DE5278F48AE0E983C97")
-        card = relcy.detail("look:#{id}", :response_type => :extended)
+        card = relcy.load_card("look:#{id}")
         card.body
       end
     end
