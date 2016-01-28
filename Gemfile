@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 
-# gem 'thin'
-# gem 'relcy'
+gem 'padrino'
+gem 'rake'
+gem 'thin'
+gem 'relcy'

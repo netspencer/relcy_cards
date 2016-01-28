@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+/* Global Styles */
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	font-family:"Calibri","Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+header {
+	text-align: left;
+	display: block;
+}
+header .logoPlaceholder span {
+	width: 80px;
+	height: 22px;
+	font-family: 'Calibri', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 53px;
+}
+
+header .profileHeader h1 {
+	font-family: 'Calibri', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 24px;
+	display: inline-block;
+}
+header .profileHeader h3 {
+	font-family: 'Calibri',sans-serif;
+	color: #a6e3ff;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+}
+#movTitle {
+	font-size:20px;
+}
+#movDetails {
+}
+#movReviews {
+    height: 20px;  
+    vertical-align: bottom;
+    display: table-cell;
+	padding-bottom:3px;
+}
+
+#movReviews img {
+    vertical-align: bottom
+}
+#movTimes {
+	color:#777777;
+	float:left;
+}
+
+#movTimes a {
+	color:#777777;
+	float:left;
+	text-decoration:none;
+}
+
+#movTrailer {
+	padding-top:5px;
+}
+
+
+#movTrailer img {
+	vertical-align:bottom;
+}
+
+#movTrailer a {
+	color:#a8e2f8;
+	text-decoration:none;
+}
+
+#driveEst a {
+	color:#aeaeae;
+	text-decoration:none;
+}
+
+hr {
+	background-color: rgba(208,207,207,1.00);
+	height: 1px;
+}
+header .profileHeader p {
+	font-family: 'Calibri', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+}
+header .profileHeader {
+	background-color: #00aff0;
+	-webkit-box-shadow: 2px 3px 5px 0px rgba(145,145,145,1);
+	-moz-box-shadow: 2px 3px 5px 0px rgba(145,145,145,1);
+	box-shadow: 2px 3px 5px 0px rgba(145,145,145,1);
+}
+
+/* Main Content sections */
+
+.sectionTitle {
+	margin-bottom: 4px;
+	padding-top: 10px;
+	font-size: 14px;
+	line-height:18px;
+}
+
+.placeImage {
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.mainContent .section {
+	display: block;
+	clear: both;
+}
+
+.mainContent {
+	display: block;
+}
+.mainContent .externalResourcesNav .externalResources {
+	background-color: rgba(208,207,207,1.00);
+	display: inline-block;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 3%;
+	cursor: pointer;
+}
+.mainContent .externalResourcesNav .externalResources:hover {
+	background-color: rgba(153,153,153,1.00);
+}
+.externalResourcesNav .externalResources a {
+	font-family: 'Calibri', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-decoration: none;
+}
+.stretch {
+	content: '';
+	display: inline-block;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.appicon {
+	align: left;
+	text-align: center;
+	font-family: 'Calibri', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 100;
+	float: left;
+	padding-right:5px;
+	padding-left:5px;
+	width: 80px;
+}
+
+.appicon a {
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 100;
+	text-decoration:none;
+}
+
+/* Media query for iPhone 6*/
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+header {
+	float: none;
+}
+
+body {
+	margin-top: 150px;
+}
+
+
+header .profileHeader h1 {
+	font-size: 22px;
+	text-align: left;
+	margin-bottom: 0;
+	margin-top:10px;
+}
+
+header .profileHeader {
+	min-height: 150px;
+	max-width: 375px;
+	background-color: #00aff0;
+	top: 0px;
+	position:fixed;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+#Maps {
+	padding-right: 4%;
+}
+
+header .profileLogo .logoPlaceholder {
+	display: inline-block;
+}
+header .profilePhoto {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	height: 130px;
+	float: left;
+}
+
+header .profilePhoto img {
+	height: 130px;
+	width: 130px;
+}
+
+header .profileHeader {
+	text-align: left;
+}
+header .profileHeader p {
+	text-align: justify;
+}
+
+
+.mainContent .section .section_content {
+	display: block;
+	margin: 0% 0% 0% 0%;
+	font-family: 'Calibri',sans-serif;;
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+.mainContent .externalResourcesNav {
+    margin-bottom: 10%;
+}
+.mainContent .externalResourcesNav .externalResources {
+	width: 100%;
+	height: 35px;
+}
+}
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+header {
+	width: 100%;
+	float: none;
+}
+
+#Maps {
+	padding-right: 5%;
+}
+header .profilePhoto {
+	float: left;
+	clear: both;
+	margin-right: 3%;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+header .profileHeader h1 {
+	margin: 0;
+	margin-top: 10px;
+	padding:0;
+}
+
+header .profilePhoto img {
+	height: 150px;
+	width: 150px;
+}
+
+header .profileHeader {
+	text-align: left;
+	min-height: 150px;
+}

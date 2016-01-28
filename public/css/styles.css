@@ -1,0 +1,425 @@
+@font-face {
+    font-family: Asap;
+    src: url("../fonts/asap-regular-webfont.eot");
+    src: url("../fonts/asap-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/asap-regular-webfont.woff2") format("woff2"),
+         url("../fonts/asap-regular-webfont.woff") format("woff"),
+         url("../fonts/asap-regular-webfont.ttf") format("truetype"),
+         url("../fonts/asap-regular-webfont.svg#asapregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+	font-family: Asap, sans-serif;
+}
+
+h2 {
+	font-family: Asap, sans-serif;
+}
+
+h4 {
+	font-family: Asap, sans-serif;
+	text-transform:uppercase;
+	color:#00aff0;
+}
+
+#actionBorder {
+	width: 200%;
+	display: inline-block;
+	border-bottom: 1px solid #00aff0;
+}
+
+#circle {
+	font-size:22px;
+	display: inline-block;
+	float:left;
+	margin-top: -6px;
+	padding-right:5px;
+}
+
+.mainContent {
+		font-family: Asap, sans-serif;
+		overflow: hidden;
+}
+
+.mainContent h2 {
+		font-weight:bolder;
+}
+
+.movReviews {
+	color: #a6e3ff;
+}
+
+.movReviews img {
+	width: 70px;
+}
+
+.column {float:left;width:100%;height:100%}
+.column h2 {text-align:left;margin:0; padding-bottom:10px; font-weight:normal;color:#00aff0;font-family:Asap, sans-serif;font-size:14px;}
+
+.column .result {padding:2px;border-bottom:1px solid #DDD;cursor:pointer}
+.column .result aside {float:right}
+
+.clearfix:before, .clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	zoom:1;
+}
+
+.profileHeader {
+	min-height: 175px;
+}
+
+h4,
+.h4,
+ {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+
+div.sa-modal {
+
+}
+.spinner {
+    display:    block;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../icons/loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+#MoreShowtimes {
+  float:right;
+}
+#Maps {
+  float:right;
+  color: #aeaeae;
+}
+#Maps a {
+  color: #aeaeae;
+  text-decoration:none;
+}
+#driveEst {
+  float:right;
+}
+
+div .profileHeader {
+	background-color: #00aff0;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(145,145,145,1);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(145,145,145,1);
+	box-shadow: 0px 3px 5px 0px rgba(145,145,145,1);
+	width: 100%;
+}
+
+header .profileHeader h1 {
+	color: #FFF;
+	text-align: left;
+	margin-bottom: 0;
+	margin-left: 10px;
+	margin-top:10px;
+	font-family: Asap, sans-serif;
+}
+
+.profileHeader p {
+	color: #fff;
+}
+
+header .movReviews {
+	color: #a6e3ff;
+	text-align: left;
+	margin-bottom: 0;
+	margin-left: 0px;
+	margin-top:10px;
+	font-family: Asap, sans-serif;
+}
+
+header .movReviews2 {
+	color: #a6e3ff;
+	text-align: left;
+	margin-bottom: 0;
+	margin-left: 10px;
+	margin-top:10px;
+	font-family: Asap, sans-serif;
+}
+div .appicon {
+	padding-right:10px;
+	text-align:center;
+	padding-left: 15px;
+	padding-bottom:12px;
+	font-family: Asap, sans-serif;
+}
+
+div .appicon a {
+	color: #76777b;
+}
+
+
+/* Media query for iPhone 6*/
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+.movTitle h1 {
+	font-size:18px;
+}
+
+.profilePhoto {
+	float: left;
+}
+
+.movTitle {
+	float: left;
+	text-align:left;
+}
+
+ /* div#spacingDiv {
+    display: none;
+} */ 
+}
+
+/* Media query for iPhone 6 Landscape*/
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+.movTitle h1 {
+	font-size:18px;
+}
+
+.profilePhoto {
+	float: left;
+}
+
+.movTitle {
+	float: left;
+	text-align:left;
+}
+
+.profileHeader {
+	min-height: 175px;
+}
+
+}
+
+@media (min-width:320px) and (max-device-width : 375px) 
+
+{
+	.movTitle h1 {
+	font-size:18px;
+}
+
+.profilePhoto {
+	float: left;
+}
+
+.movTitle {
+	float: left;
+	text-align:left;
+}
+
+.videoThumb img {
+	width: 155px;
+	height: 103px;
+}
+
+.imageThumb img {
+	width: 100px;
+	height: 76px;
+} 	
+
+ 	
+
+
+}
+@media (min-width:480px) and (max-device-width : 600px)  
+
+{ 
+.movTitle h1 {
+	font-size:18px;
+}
+
+.profilePhoto {
+	float: left;
+}
+
+.movTitle {
+	float: left;
+	text-align:left;
+	
+} 
+
+}
+
+@media (min-width:601px) and (max-device-width : 801px) {
+	.movTitle h1 {
+	font-size:18px;
+}
+
+.profilePhoto {
+	float: left;
+}
+
+.movTitle {
+	float: left;
+	text-align:left;
+	
+}
+}
+
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 3) 
+{ 
+.movTitle h1 {
+	font-size:18px;
+}
+
+.profilePhoto {
+	float: left;
+}
+
+.movTitle {
+	float: left;
+	text-align:left;
+	
+}
+
+.profileHeader {
+		min-height: 175px;
+	}
+}
+
+@media (min-width:802px) {
+	.profileHeader {
+		min-height: 175px;
+	}
+	
+	.profilePhoto {
+		float:left;
+	}
+	
+	header .profileHeader h1 {
+		margin-top:0;
+}
+
+	.spacingDiv {
+		display:none;
+}
+
+	.movTitle {
+		padding-top:	10px;
+		padding-left:10px;
+	}
+	
+	.movReviews {
+		padding-top: -10px;
+}
+}
+/* Media query for iPhone 5*/
+@media screen and (device-aspect-ratio: 40/71) {
+	.videoThumb img {
+	width: 135px;
+	height: 90px;
+}
+	.imageThumb img {
+	width: 90px;
+	height: 70px;
+} 	
+	}
+	
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)
+{
+    .videoThumb img {
+	width: 135px;
+	height: 90px;
+}	
+.imageThumb img {
+	width: 90px;
+	height: 70px;
+} 
+}
+
+
+a.play-button-link {
+	position:relative;
+	display:inline-block;
+	line-height:0px;
+}
+
+/*#home-content-stories img.play-button, */
+a.play-button-link img.play-button {
+  position: absolute;
+	bottom: 32%;
+	left: 55%;
+	z-index: 10;
+	margin: 0 0 0 -30px;
+	opacity:0.8;
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";*/ /*IE fix for alpha transparency, however it doesn't work with transparent .pngs*/
+	display:inline-block;
+	/*max-width: 20%;	*/
+}
+
+/*#home-content-stories img.play-button:hover, */
+a.play-button-link:hover img.play-button {
+	opacity:1.0;
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";*/ /*IE fix for alpha transparency, however it doesn't work with transparent .pngs*/
+}
+
+videoContainer {
+	width: 200px; 
+	height: 200px; 
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+videoContainer img {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.imageThumb {
+	display: inline-block;
+} 
+
+.webTitle h2 {
+	padding-left: 0;
+}
+
+.newsTitle h2 {
+	padding-left: 0;
+	padding-bottom:0;
+}
+
+
+. viewMoreWeb {
+	text-align:center;
+}
+
+webResultTitle a:link {
+	font-weight: 700;
+}
+.movReviews:empty {
+  display:;
+}

@@ -1,0 +1,273 @@
+@media screen and (max-width: 1136px) {
+	.mobileContainer {
+		display: block;
+	}
+	.desktopContainer {
+		display: none;
+	}
+	.mobile-overlay {
+		position: absolute;
+		z-index: 12;
+		top: 0; left: 0; right: 0; bottom: 0;
+		background: rgba(0, 0, 0, .75);
+		display: block;
+	}
+	.relcy-open {
+		position: fixed;
+		bottom: 0; left: 0;
+		width: 100%;
+		z-index: 999;
+		background: #FFF;
+		height: 80px;
+	}
+	.open {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 80px;
+		padding-left: 60px;
+		color: #3a3a3a;
+	}
+	.relcy-app {
+		width: 32px;
+		position: absolute;
+		top: 50%;
+		left: 16px;
+		margin-top: -16px;
+	}
+	.open-chevron {
+		height: 20px;
+		position: absolute;
+		top: 50%;
+		margin-top: -10px;
+		right: 16px;
+	}
+	p {
+		font-size: 14px;
+		color: #3a3a3a;
+	}
+	#top {
+		width: 100%;
+		min-height: 375px;
+		background: red;
+		position: relative;
+	}
+	.main-image {
+		position: absolute;
+		z-index: 1;
+		top: 0; left: 0; right: 0; bottom: 0;
+		/*background: url('../icons/siliconvalley.jpg') no-repeat center center;*/
+		background-size: cover;
+		overflow: hidden;
+	}
+	.gradient {
+		background: rgba(0,0,0,0);
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+		width: 100%;
+		height: 165px;
+		position: absolute;
+		left: 0; right: 0; bottom: 0;
+		z-index: 2;
+	}
+	#info {
+		position: absolute;
+		bottom: 15px;
+		left: 30px;
+		color: rgba(255, 255, 255, 1);
+		z-index: 3;
+	}
+	h1.title {
+		font-size: 14px;
+		font-weight: 600;
+		color: rgba(255, 255, 255, 1);
+		margin-bottom: 8px;
+	}
+	h2.subinfo {
+		font-size: 12px;
+		font-weight: 400;
+		color: rgba(255, 255, 255, .9);
+		margin-bottom: 8px;
+	}
+	.rating li {
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		list-style: none;
+		background: url('../icons/Star_Small@2x.png') center center no-repeat;
+		background-size: cover;
+	}
+	.rating h2 {
+		display: inline-block;
+		position: relative;
+		top: -2px;
+	}
+	#actionbar {
+		width: 100%;
+		height: 45px;
+		position: absolute;
+		bottom: 0px;
+		z-index: 4;
+		background: rgba(255, 255, 255, .88);
+	}
+	h2.section-title {
+		font-size: 14px;
+		font-weight: 600;
+		color: #6C6C6C;
+		margin: 24px 0 16px 16px;
+		text-transform: uppercase;
+	}
+	section {
+		width: 100%;
+	}
+	section .actionsheet {
+		position: relative;
+		left: 2px;
+		background: #FFF;
+		border-bottom: 2px solid #DDDDDE;
+	}
+	section li {
+		background: #fff;
+		border-right: 1px solid #F2F2F4;
+		border-bottom: 1px solid #F2F2F4;
+		padding: 0px;
+		position: relative;
+	}
+	.actionsheet li {
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -4px;
+		height: 55px;
+	}
+	.app-icon {
+		width:25px;
+		height:25px;
+		border-radius: 7px;
+		/*background: #ddddde;*/
+		position: absolute;
+		top: 50%;
+		left: 12px;
+		margin-top: -13px;
+	}
+	.actiontitle {
+		font-size: 14px;
+		color: #3a3a3a;
+		line-height: 55px;
+		padding-left: 50px;
+	}
+	.chevron {
+		width: 6px;
+		position: absolute;
+		top: 50%;
+		margin-top: -5px;
+		right: 14px;
+	}
+	.searchlist {
+		width: 100%;
+	}
+	.searchlist li .icon-search {
+		width: 15px;
+		position: absolute;
+		top: 50%;
+		margin-top: -8px;
+		left: 16px;
+	}
+	.searchlist li p {
+		line-height: 46px;
+		padding-left: 31px;
+		margin-left: 10px;
+	}
+	.showslist li {
+		padding: 16px;
+	}
+	.showslist .actiontitle {
+		font-size: 14px;
+		color: #3a3a3a;
+		line-height: 16px;
+		padding-left: 0px;
+	}
+	.showslist .smalltext {
+		font-size: 12px;
+		color: #818181;
+		line-height: 13px;
+		padding-left: 0px;
+		margin-top: 4px;
+	}
+	.weblist li {
+		padding: 16px;
+	}
+	.weblist .actiontitle {
+		line-height: 16px;
+		padding-left: 0px;
+		font-size: 14px;
+	}
+	.weblist .smalltext {
+		font-size: 12px;
+		color: #818181;
+		line-height: 13px;
+		padding-left: 0px;
+		margin-top: 4px;
+	}
+	.newslist li {
+		padding: 16px;
+	}
+	.newslist .news-image {
+		float: left;
+		width: 80px;
+		height: 80px;
+		background: #ddddde;
+		border-radius: 6px;
+	}
+	.newslist .actiontitle {
+		line-height: 16px;
+		padding-left: 90px;
+		font-size: 14px;
+	}
+	.social-image {
+		float: left;
+		width: 50px;
+		height: 50px;
+		background: #ddddde;
+		border-radius: 6px;
+	}
+	.social-activities .actiontitle {
+		line-height: 16px;
+		padding-left: 62px;
+		font-size: 14px;
+	}
+	.smalltext {
+		font-size: 12px;
+		color: #818181;
+		line-height: 13px;
+		padding-left: 90px;
+		margin-top: 4px;
+	}
+	.social-activities .smalltext {
+		font-size: 12px;
+		color: #818181;
+		line-height: 13px;
+		padding-left: 62px;
+		margin-top: 4px;
+	}
+	.download .app-icon {
+		position: absolute;
+		top: 50%;
+		margin-top: -13px;
+
+	}
+	.download {
+		background: #FFF;
+		margin: 24px auto;
+		margin-top: 0px;
+		position: relative;
+	}
+	.downloadlink {
+		line-height: 55px;
+		padding-left: 46px;
+	}
+}
