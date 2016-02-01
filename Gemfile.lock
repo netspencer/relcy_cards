@@ -33,6 +33,7 @@ GEM
     mustermann19 (0.4.0)
       enumerable-lazy
     naught (1.1.0)
+    oj (2.14.3)
     padrino (0.13.1)
       padrino-admin (= 0.13.1)
       padrino-cache (= 0.13.1)
@@ -101,6 +102,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  oj
   padrino
   rake
   relcy

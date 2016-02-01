@@ -1,22 +1,18 @@
 <div ng-repeat="r in searchResults">
 
   <div id="top">
-    <div class="main-image" style="background-image: url(<%= @card["image"] %>)"></div>
+    <div class="main-image" style="background-image: url()"></div>
     <div class="gradient"></div>
     <div id="info">
-      <h1 class="title"><%= @card["title"] %></h1>
+      <h1 class="title"></h1>
 
-      <h2 class="subinfo"><%= @card["subTitle"] %></h2>
+      <h2 class="subinfo"></h2>
 
-      <% if @card["subTitle2"] %>
-      <h2 class="subinfo"><%= @card["subTitle2"] %></h2>
-      <% end %>
-
-      <% if @card["origRating"] %>
+      <h2 class="subinfo"></h2>
+=
       <h2 class="subinfo">
         <img class="star" src="{{r.ratingUrl}}"/>({{r.origRating}})&nbsp;-&nbsp;{{r.ratingSource}}
       </h2>
-      <% end %>
     </div>
   </div>
   <div id="content">
