@@ -7,10 +7,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.4.0)
+    concurrent-ruby (1.0.0)
     daemons (1.2.3)
     enumerable-lazy (0.0.1)
-    equalizer (0.0.11)
     ethon (0.8.1)
       ffi (>= 1.3.0)
     eventmachine (1.0.9.1)
@@ -19,7 +18,8 @@ GEM
     faraday_middleware (0.10.0)
       faraday (>= 0.7.4, < 0.10)
     ffi (1.9.10)
-    hashie (3.4.3)
+    haml (4.0.7)
+      tilt
     i18n (0.7.0)
     json (1.8.3)
     mail (2.6.3)
@@ -32,7 +32,6 @@ GEM
     multipart-post (2.0.0)
     mustermann19 (0.4.0)
       enumerable-lazy
-    naught (1.1.0)
     oj (2.14.3)
     padrino (0.13.1)
       padrino-admin (= 0.13.1)
@@ -66,26 +65,28 @@ GEM
     padrino-mailer (0.13.1)
       mail (~> 2.5)
       padrino-core (= 0.13.1)
+    padrino-sprockets (0.0.3)
+      sprockets
     padrino-support (0.13.1)
       activesupport (>= 3.1)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
     rake (10.5.0)
-    relcy (0.1.4)
-      addressable (~> 2.3)
-      equalizer (~> 0.0.11)
+    relcy (0.1.6)
       faraday (~> 0.9)
       faraday_middleware (~> 0.9)
-      hashie (~> 3.4.3)
       json (~> 1.8)
       memoizable (~> 0.4.0)
-      naught (~> 1.0)
       typhoeus (~> 1.0)
+    sass (3.4.21)
     sinatra (1.4.7)
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
+    sprockets (3.5.2)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
     thin (1.6.4)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -102,11 +103,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  oj
-  padrino
-  rake
-  relcy
-  thin
+  haml (~> 4.0)
+  oj (~> 2.14)
+  padrino (~> 0.13.1)
+  padrino-sprockets
+  rake (~> 10.5)
+  relcy (~> 0.1.5)
+  sass (~> 3.4)
+  thin (~> 1.6)
 
 BUNDLED WITH
    1.11.2

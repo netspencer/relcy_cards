@@ -1,0 +1,10 @@
+%html
+  %head
+    = stylesheet_link_tag 'application'
+    %meta{name: "twitter:card", content: "summary_large_image"}/
+    %meta{name: "twitter:site", content: "@relcy"}/
+    %meta{name: "twitter:title", content: @card["title"]}/
+    %meta{name: "twitter:description", content: @card["subTitle"]}/
+    %meta{name: "twitter:image", content: @card["image"]}/
+  %body
+    = yield
