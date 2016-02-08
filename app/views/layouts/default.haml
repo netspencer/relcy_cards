@@ -7,4 +7,6 @@
     %meta{name: "twitter:description", content: @card["subTitle"]}/
     %meta{name: "twitter:image", content: @card["image"]}/
   %body
-    = yield
+    %header.relcy-header
+    %section.content= yield
+    %footer.relcy-footer

@@ -1,1 +1,36 @@
+@import "sassline";
 
+.relcy-card {
+  width: 360px;
+  background: #FFF;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  @include fontsize(zeta);
+
+  &__header {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+
+    &__image {
+
+    }
+
+    &__content {
+      margin: 20px;
+      position: absolute;
+      bottom: 0;
+      color: #FFF;
+
+      h1 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+}

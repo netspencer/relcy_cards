@@ -1,13 +1,15 @@
-%section.relcy-card
-  %div.relcy-card__header
-    %div.relcy-card__image= image_tag(@card["image"])
-    %h1.relcy-card__title= @card["title"]
-    %h2.relcy-card__subtitle= @card["subTitle"]
-    %div.relcy-card__rating= image_tag("/assets/stars/#{@card["rating"]}.png")
+%section.relcy-card.typeset
 
-- @card["action"].each do |action_group|
-  %div.relcy-card__action-group
-    %h3.relcy-card__action-group-title= action_group.first
-    %ul.relcy-card__action-group-list
-    - action_group.pop.each do |action|
-      %li= action
+  %div.relcy-card__header
+    %div.relcy-card__header__image= image_tag(@card["image"])
+    %div.relcy-card__header__content
+      %h1.relcy-card__title= @card["title"]
+      %h2.relcy-card__subtitle= @card["subTitle"]
+      %div.relcy-card__rating= image_tag("/assets/stars/#{@card["rating"]}.png")
+
+  - @card["action"].each do |action_group|
+    %div.relcy-card__action-group
+      %h3.relcy-card__action-group-title= action_group.first
+      %ul.relcy-card__action-group-list
+      - action_group.pop.each do |action|
+        %li= action
